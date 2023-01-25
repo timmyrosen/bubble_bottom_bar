@@ -4,7 +4,7 @@ import 'dart:math' as math;
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:badges/badges.dart';
+import 'package:badges/badges.dart' as badges;
 
 const double _kActiveFontSize = 14.0;
 const double _kBottomMargin = 8.0;
@@ -193,11 +193,11 @@ class _TileIcon extends StatelessWidget {
     return Align(
       alignment: Alignment.topCenter,
       heightFactor: 1.0,
-      child: Badge(
+      child: badges.Badge(
         showBadge: item.showBadge,
         badgeContent: item.badge,
         badgeColor: item.badgeColor,
-        animationType: BadgeAnimationType.fade,
+        animationType: badges.BadgeAnimationType.fade,
         child: Container(
           child: IconTheme(
             data: IconThemeData(
