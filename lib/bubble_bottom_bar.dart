@@ -192,8 +192,9 @@ class _TileIcon extends StatelessWidget {
     iconColor = Colors.white;
     return Align(
       alignment: Alignment.topCenter,
-      heightFactor: 1.0,
+      heightFactor: 1,
       child: badges.Badge(
+        position: badges.BadgePosition.topEnd(top: -14, end: -14),
         showBadge: item.showBadge,
         badgeContent: item.badge,
         badgeColor: item.badgeColor,
